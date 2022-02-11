@@ -13,33 +13,36 @@
 
 <body>
     <header class="titulo">BLACKJACK</header>
-    <div id="divBotones" class="row mt-4">
+    <div id="divBotones" class="row mt-4 mb-4">
         <div class="col text-center">
-            <button id="btn_nuevo"  class='btn btn-danger'>Nuevo Juego</button>
-            <button id="btn_pedir" disabled class='btn btn-primary '>Pedir Carta</button>
-            <button id="btn_detener" disabled class='btn btn-primary '>Detener</button>
+            <button id="btn_nuevo" class='btn btn-danger margen-derecha'>Nuevo Juego</button>
+            <button id="btn_pedir" disabled class='btn btn-primary margen-derecha'>Pedir Carta</button>
+            <button id="btn_detener" disabled class='btn btn-primary margen-derecha'>Detener</button>
 
         </div>
     </div>
-
-    <div class="row container">
-        <div class="col">
-            <h1>Jugador 1 - <small>0</small></h1>
-            <div id="jugador-cartas" class="divCartas">
-                <!-- aqui se cilocará todas las cartas que el jugador va mostrando -->
-                <!-- <img class="carta" src="assets/cartas/10C.png"> -->
+    <div class="d-flex justify-content-center">
+        <div class="row bordeCaja mt-3">
+            <div class="col text-center">
+                <h1>Jugador: <small>0</small> </h1>
+                <div id="jugador-cartas" class="divCartas mt-4">
+                    <!-- aqui se cilocará todas las cartas que el jugador va mostrando -->
+                    <!-- <img class="carta" src="assets/cartas/10C.png"> -->
+                </div>
             </div>
-        </div>
 
+        </div>
     </div>
 
+    <div class="d-flex justify-content-center mt-4">
+        <div class="row  bordeCaja ">
+            <div class="col-12 text-center">
+                <h1>Computadora: <small>0</small></h1>
+                <div id="computadora-cartas" class="divCartas mt-4">
+                    <!-- aqui se cilocará todas las cartas que el jugador va mostrando -->
+                    <!-- <img class="carta" src="assets/cartas/3C.png"> -->
 
-    <div class="row container mt-2">
-        <div class="col">
-            <h1>Computadora - <small>0</small></h1>
-            <div id="computadora-cartas" class="divCartas">
-                <!-- aqui se cilocará todas las cartas que el jugador va mostrando -->
-                <!-- <img class="carta" src="assets/cartas/3C.png"> -->
+                </div>
             </div>
         </div>
     </div>

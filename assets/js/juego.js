@@ -87,17 +87,17 @@ const miModulo = (() => {
             } else {
                 alert('Perdiste, computadora gana')
             }
-        }, 100);
+        }, 500);
     }
 
     // TURNO DE LA COMPUTADORA
-    const turnoComputadora = (puntosMinimos) => {
+    const turnoComputadora = async (puntosMinimos) => {
         let puntosComputadora = 0;
-        do {
+         do   {
             const carta = pedirCarta();
             puntosComputadora = acumularPuntos(puntosJugadores.length - 1, carta);
             crearCarta(carta, puntosJugadores.length - 1)
-        } while ((puntosComputadora < puntosMinimos) && (puntosMinimos <= 21))
+        }  while  ((puntosComputadora < puntosMinimos) && (puntosMinimos <= 21))
         determinarGanador();
     }
 

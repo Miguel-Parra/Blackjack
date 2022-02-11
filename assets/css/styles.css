@@ -14,13 +14,32 @@ html, body {
 
 .carta{
     position: relative;
-    width: 150px;
-    left: 100px;
+    height: 80%;
+    left: 50px;
     margin-left: -75px;
-
 }
 
 #computadora-cartas, #jugador-cartas{
-    height: 240px;
+    display: flex;
+    height: 30vh;
+    justify-content: center;
+    text-align: center;
+}
 
+.margen-derecha{
+    margin-right: 2%;
+}
+
+.bordeCaja{
+    border: white 2px solid;
+    width: 40vw;
+    overflow: auto;
+}
+
+@media (max-width:1280px){
+    .bordeCaja{
+        border: white 2px solid;
+        width: 90vw;
+      
+    }  
 }
